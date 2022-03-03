@@ -48,3 +48,12 @@ main p{
     font-size: 1.2vw;
     width: 70%;
 }
+
+.container_box{
+    background-color: #EEDD82;
+    font-size: 1vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
