@@ -1,59 +1,57 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
+body{ 
+  background-color:darkolivegreen
+}
 
 .container{
-    width:100%;
-    height: 30vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('./Header-Carnaval-em-Família-Confeite-Matilda-My-1440x810.png.crdownload');
+  max-width: 1920px;
+  width: 100%;
+  border-bottom: solid 1px;
 }
 
-.container h1{
-    font-size:5vw;
+@media (max-width:500px) {
+  .container{
+    border-bottom:none;
+    border:solid;
+  }
 }
 
-main{
-    background-color: #8FBC8F;
-    width: 100%;
-    height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.container_header{
+  width: 100%;
 }
 
-main ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+.container_header_figure--photo{
+  width: 10vw;
+  margin-top: 2vh;
 }
 
-main li{
-    font-size: 2.5vw;
-    height: 5vh;   
-    
+.container_menu--list{
+  width: 100%;
+  text-align: center;
 }
 
-main p{
-    text-align: justify;
-    border:dashed 1px;
-    font-size: 1.2vw;
-    width: 70%;
+.container_menu--list li{
+  display:inline-block;
+  text-align: center;
+  width:20vw;
+  font-size:2rem;
+  margin-left: 3vw;
 }
 
-.container_box{
-    background-color: #EEDD82;
-    font-size: 1vw;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container_menu--list li:hover{
+  color:red;
+  cursor:pointer;
+  font-weight: bold;
+  transition: 2s ease-in-out;
+}
+
+@media (max-width: 500px) {
+ .container_menu--list li{
+    font-size:1rem;
+  }
 }
