@@ -14,13 +14,6 @@ body{
   border-bottom: solid 1px;
 }
 
-@media (max-width:500px) {
-  .container{
-    border-bottom:none;
-    border:solid;
-  }
-}
-
 .container_header{
   width: 100%;
 }
@@ -28,10 +21,19 @@ body{
 .container_header_figure--photo{
   width: 10vw;
   margin-top: 2vh;
+  margin-left:2vw;
+}
+
+@media (max-width:500px){
+  .container_header_figure--photo{
+    width: 12vw;
+    margin-left:45vw;
+  }
 }
 
 .container_menu--list{
   width: 100%;
+  border-top:solid 1px;
   text-align: center;
 }
 
